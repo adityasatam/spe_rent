@@ -4,5 +4,5 @@
   tasks:
     - name: Pull spe major project image
       docker_image:
-        name: sasukeaditya236/spe_major_project
+        name: sasukeaditya236/junit-devops
         source: pull
