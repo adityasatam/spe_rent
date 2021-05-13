@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProductAcitvity">
+
+    <LinearLayout
+        android:id="@+id/ll_include_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="6"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_anchor="@+id/ll_include_header"
+        app:layout_anchorGravity="center_horizontal|top"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/iv_product_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/renting_logo_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_height="0dp"
+            android:paddingTop="13dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:background="@color/white"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Details:"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="8dp"
+                android:layout_height="wrap_content"
+                android:text="Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:id="@+id/tv_product_name"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:text="Product Name"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/textview_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Description"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:id="@+id/tv_product_description"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:text="Product Description"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/textview_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Price/Month"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:id="@+id/tv_product_price"
+                android:paddingLeft="10dp"
+                android:text="Product Price/Month"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/textview_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Owner Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/tv_owner_name"
+                android:text="Owner Name"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/textview_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Owner Location"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/tv_owner_location"
+                android:text="Owner Location"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/textview_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_message"
+                android:text="This is a message window"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red_status_color"/>
+
+            <Button
+                android:id="@+id/button_book_for_rent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/button_shape"
+                android:text="Request For Rent"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

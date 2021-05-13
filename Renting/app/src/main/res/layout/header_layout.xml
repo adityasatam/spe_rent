@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/water_color_blue"
+    android:elevation="4dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_header_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Renting"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="22sp" />-->
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFundsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_include_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_color" />
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:adjustViewBounds="true"
+                android:elevation="40dp"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/renting_logo_image" />
+
+            <TextView
+                android:layout_below="@+id/imageViewLogo"
+                android:id="@+id/tv_header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Funds"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_anchor="@+id/ll_include_header"
+        app:layout_anchorGravity="center_horizontal|top"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_height="0dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:background="@color/white"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Current Fund"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:id="@+id/tv_current_fund"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:text="500"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/textview_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Add Fund"/>
+
+            <EditText
+                android:id="@+id/et_add_fund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint=""
+                android:inputType="number"
+                android:background="@drawable/textview_bg"
+                android:text=""
+                android:textColorHint="@color/light_black" />
+
+            <Button
+                android:id="@+id/button_add_fund"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30sp"
+                android:background="@drawable/button_shape"
+                android:text="Add Funds"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

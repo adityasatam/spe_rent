@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_include_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="5dp"
+        android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_color" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:id="@+id/iv_user_menu"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_foreground" />
+
+            <TextView
+                android:id="@+id/tv_header_text"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Dashboard"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:id="@+id/iv_add_product"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:src="@drawable/add_product_foreground" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll_search_bar"
+            android:layout_height="wrap_content"
+            android:gravity="center|right">
+
+            <EditText
+                android:id="@+id/editMobileNo"
+                android:paddingLeft="20dp"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/search_edit_text"
+                android:hint="  Search"
+                android:drawableLeft="@drawable/search_icon" >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_products"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/ll_search_bar"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
