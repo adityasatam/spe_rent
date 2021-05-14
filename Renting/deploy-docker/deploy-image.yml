@@ -2,7 +2,7 @@
 - name: Pull docker image
   hosts: all
   tasks:
-    - name: Pull spe major project image
+    - name: Pull junit devops image
       docker_image:
         name: sasukeaditya236/junit-devops
         source: pull
